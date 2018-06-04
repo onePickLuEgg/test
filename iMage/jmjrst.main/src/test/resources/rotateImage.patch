@@ -1,0 +1,17 @@
+diff --git a/iMage/jmjrst.main/src/main/java/org/jis/generator/Generator.java b/iMage/jmjrst.main/src/main/java/org/jis/generator/Generator.java
+index 24a7256..6152f11 100644
+--- a/iMage/jmjrst.main/src/main/java/org/jis/generator/Generator.java
++++ b/iMage/jmjrst.main/src/main/java/org/jis/generator/Generator.java
+@@ -741,6 +741,12 @@
+       width = image.getHeight(null); // swap
+       height = image.getWidth(null);
+     }
++    /**
++   	 * Sommersemester 2018, Übungsblatt 1, Aufgabe 2 g)
++   	 */
++    else if (Math.abs(rotate - Math.toRadians(180)) < 0.0000001d) {
++       	return rotateImage(rotateImage(image, ROTATE_90), ROTATE_90);
++   	}
+     else
+     {
+       throw new IllegalArgumentException("degree must be a mutiple of 90°!");
