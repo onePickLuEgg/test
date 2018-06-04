@@ -18,5 +18,9 @@
 	</repositories>
 	<modules>
 		<module>jmjrst.main</module>
+		
+		
+		<module>iMage.shutterpile</module>
+		<module>iMage.shutterpile-cli</module>
 	</modules>
 </project>
